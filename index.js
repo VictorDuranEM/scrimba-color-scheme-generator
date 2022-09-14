@@ -37,7 +37,7 @@ processColorScheme()
 document.getElementById('colors').addEventListener('click', (e) => {
   if(e.target.classList.contains("color-bar")) {
     const colorHex = rgbToHex(e.target.style.backgroundColor)
-    navigator.clipboard.writeText(colorHex);
+    navigator.clipboard.writeText(colorHex.toUpperCase());
     const copiedMsg = document.getElementById('copied-msg')
     copiedMsg.classList.add('show')
     setTimeout(() => copiedMsg.classList.remove('show'), 1500)
