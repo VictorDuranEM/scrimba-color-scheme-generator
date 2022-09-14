@@ -9,7 +9,7 @@ document.getElementById('color-form').addEventListener('submit', (e) => {
 let colors = []
 
 function processColorScheme() {
-  const colorHex = document.getElementById('color-picker').value
+  const colorHex = document.getElementById('color-picker').value.toUpperCase()
   const colorMode = document.getElementById('color-mode-select').value
   
   colors = [ new Color({ colorHex: colorHex })]
