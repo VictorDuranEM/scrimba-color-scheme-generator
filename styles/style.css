@@ -1,0 +1,145 @@
+/* Reset */
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;	
+}
+
+
+
+/* ==================
+Typography
+ ================== */
+
+body {
+	font-family: 'Inter', sans-serif;
+	font-weight: 500;
+	font-size: 0.75rem;
+	color: #374151;
+	text-align: center;
+}
+
+
+.color-mode-select {
+	font-weight: 400;
+	font-size: 1rem;
+	color: #111827;
+}
+
+.color-name {
+	color: #2B283A;
+}
+
+
+/* ==================
+Layout
+ ================== */
+ 
+ 
+ body {
+	 background: #1c1c1c;
+	 padding: 20px;
+	}
+	
+	.container {
+		max-width: 550px;
+		margin: 20px auto;
+		background: white;
+		position: relative;
+	}
+	
+/* Form Elements */
+	
+.config-panel {
+	padding: 23px 0;
+	width: 95%;
+	margin: 0 auto;
+}
+
+.color-form {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.color-picker {
+	width: 11%;
+	height: 42px;
+	background: #E5E5E5;
+	border: none;
+}
+
+.color-mode-select {
+	width: 59%;
+	height: 42px;
+	border: 1px solid #D1D5DB;
+	border-radius: 6px;
+	background: transparent;
+	padding: 0 .8em;
+}
+
+.color-btn {
+	width: 24%;
+	background: transparent;
+	border: 1px solid #D1D5DB;
+	border-radius: 4px;
+	font-size: inherit;
+	color: inherit;
+	cursor: pointer;
+}
+
+
+/* Color Bars Elements */
+
+.colors {
+	height: 439px;
+	display: flex;
+}
+
+.color {
+	width: 20%;
+}
+ 
+.color-bar {
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.color-name {
+	padding: 1em;	
+}
+
+.copied-msg {
+	background: #111827;
+	color: white;
+	position: absolute;
+	width: 25%;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: .5em 1em;
+	border-radius: 5px;
+	opacity: 0;
+	transition: opacity 500ms ease-in;
+}
+
+.copied-msg.show {
+	opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
